@@ -1,0 +1,9 @@
+{
+    "routes": [
+      {
+        "src": "/get_planets",
+        "dest": "http://localhost:8000/get_planets"
+      }
+    ]
+  }
+  
