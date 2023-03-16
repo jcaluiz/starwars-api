@@ -1,6 +1,6 @@
 {
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/get_planets", "dest": "api/main:app" }
+    { "src": "/get_planets", "dest": "swapi/main:app" }
   ]
 }
