@@ -1,6 +1,12 @@
 {
+  "build": {
+    "src": "swapi/main.py",
+    "use": "@vercel/python"
+  },
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "/get_planets", "dest": "./swapi/main:app" }
+    {
+      "src": "/(.*)",
+      "dest": "swapi/main.py"
+    }
   ]
 }
