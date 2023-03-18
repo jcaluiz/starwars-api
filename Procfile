@@ -1,3 +1,3 @@
 web: python swapi/main.py
 release: python swapi/db.py
-web: railway run uvicorn swapi.main:app --port $PORT --workers 1
+web: sh build.sh && uvicorn swapi.main:app --host 0.0.0.0 --port $PORT
