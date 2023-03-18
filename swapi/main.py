@@ -3,6 +3,10 @@ from swapi.db import create_db_and_tables, engine
 from sqlmodel import Session, select
 from swapi.db_populate import populate_empty_tables
 from swapi.model import Planet
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+db_path = os.path.join(BASE_DIR, "data", "database.sqlite")
+
 
 app = FastAPI()
 
