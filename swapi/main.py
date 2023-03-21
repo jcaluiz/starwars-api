@@ -11,16 +11,17 @@ db_path = os.path.join(BASE_DIR, "data", "database.sqlite")
 
 app = FastAPI()
 
-# origins = [
-#     "http://localhost",
-#     "http://localhost:3000",
-#     "https://example.com",
-#     "https://www.example.com",
-# ]
+origins = [
+    "http://localhost",
+    "http://localhost:3000",
+    "https://example.com",
+    "https://www.example.com",
+    "https://jcaluiz.github.io/Project-StartWars-Planet-Search/",
+]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
