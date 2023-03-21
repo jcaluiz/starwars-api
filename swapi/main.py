@@ -20,6 +20,7 @@ origins = [
     "https://jcaluiz.github.io/",
     "http://jcaluiz.github.io/",
     "https://starwars-api-production.up.railway.app",
+    "https://starwars-api-production.up.railway.app/get_planets",
 ]
 
 app.add_middleware(
