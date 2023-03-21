@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Response
 from swapi.db import create_db_and_tables, engine
 from sqlmodel import Session, select
 from swapi.db_populate import populate_empty_tables
@@ -48,7 +48,8 @@ async def root():
 
 
 @app.get("/get_planets", tags=["planets"])
-async def list_planets():
+async def list_planets(response: Response):
     with get_session() as session:
         planets = session.exec(select(Planet)).all()
+        response.headers["Access-Control-Allow-Origin"] = "*"
         return planets
