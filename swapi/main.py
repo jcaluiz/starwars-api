@@ -18,7 +18,8 @@ origins = [
     "https://www.example.com",
     "https://jcaluiz.github.io/Project-StartWars-Planet-Search/",
     "https://jcaluiz.github.io/",
-    "http://jcaluiz.github.io/"
+    "http://jcaluiz.github.io/",
+    "https://starwars-api-production.up.railway.app",
 ]
 
 app.add_middleware(
