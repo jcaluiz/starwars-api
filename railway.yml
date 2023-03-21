@@ -1,0 +1,5 @@
+[[services]]
+  internal_port = 8000
+  protocol = "http"
+  script = "npm start"
+  cors = true
